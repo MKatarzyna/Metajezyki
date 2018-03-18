@@ -30,7 +30,6 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageZadbjO = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
             this.buttonCialo = new System.Windows.Forms.Button();
             this.buttonDlonieStopy = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -59,7 +58,6 @@
             // 
             // tabPageZadbjO
             // 
-            this.tabPageZadbjO.Controls.Add(this.button2);
             this.tabPageZadbjO.Controls.Add(this.buttonCialo);
             this.tabPageZadbjO.Controls.Add(this.buttonDlonieStopy);
             this.tabPageZadbjO.Controls.Add(this.dataGridView1);
@@ -71,15 +69,6 @@
             this.tabPageZadbjO.TabIndex = 0;
             this.tabPageZadbjO.Text = "Zadbaj o...";
             this.tabPageZadbjO.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(275, 7);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(8, 8);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // buttonCialo
             // 
@@ -201,7 +190,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn opisZabiegu1;
         private System.Windows.Forms.DataGridViewTextBoxColumn kosztZabiegu1;
         private System.Windows.Forms.Button buttonDlonieStopy;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button buttonCialo;
     }
 }

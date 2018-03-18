@@ -26,7 +26,7 @@ namespace PlannerUrodowy
         {
             InitializeComponent();
             document = new XmlDocument();
-            document.Load("./uslugi.xml");
+            document.Load("../../Resources/uslugi.xml");
 
         }
 

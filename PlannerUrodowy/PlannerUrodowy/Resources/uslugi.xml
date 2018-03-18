@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="uslugi.xsl"?>
+<planerUrodowy>
+	<zadbajO>
+		<zabieg id_kategorii="1">
+			<glownaCzescCiala>GŁOWA</glownaCzescCiala>
+			<wybranaCzescCiala>Włosy</wybranaCzescCiala>
+			<rodzajZabiegu>Farbowanie</rodzajZabiegu>
+			<dataPlanowanegoZabiegu>2018-03-20</dataPlanowanegoZabiegu>
+			<opisZabiegu></opisZabiegu>
+			<kosztZabiegu>120</kosztZabiegu>
+		</zabieg>
+		<zabieg id_kategorii="1">
+			<glownaCzescCiala>GŁOWA</glownaCzescCiala>
+			<wybranaCzescCiala>Włosy</wybranaCzescCiala>
+			<rodzajZabiegu>Maska</rodzajZabiegu>
+			<dataPlanowanegoZabiegu>2018-03-25</dataPlanowanegoZabiegu>
+			<opisZabiegu></opisZabiegu>
+			<kosztZabiegu></kosztZabiegu>
+		</zabieg>
+		<zabieg id_kategorii="1">
+			<glownaCzescCiala>GŁOWA</glownaCzescCiala>
+			<wybranaCzescCiala>Włosy</wybranaCzescCiala>
+			<rodzajZabiegu>Strzyżenie</rodzajZabiegu>
+			<dataPlanowanegoZabiegu></dataPlanowanegoZabiegu>
+			<opisZabiegu></opisZabiegu>
+			<kosztZabiegu></kosztZabiegu>
+		</zabieg>
+		<zabieg id_kategorii="1">
+			<glownaCzescCiala>GŁOWA</glownaCzescCiala>
+			<wybranaCzescCiala>Twarz</wybranaCzescCiala>
+			<rodzajZabiegu>Peeling</rodzajZabiegu>
+			<dataPlanowanegoZabiegu></dataPlanowanegoZabiegu>
+			<opisZabiegu></opisZabiegu>
+			<kosztZabiegu></kosztZabiegu>
+		</zabieg>
+		<zabieg id_kategorii="1">
+			<glownaCzescCiala>GŁOWA</glownaCzescCiala>
+			<wybranaCzescCiala>Twarz</wybranaCzescCiala>
+			<rodzajZabiegu>Maska</rodzajZabiegu>
+			<dataPlanowanegoZabiegu></dataPlanowanegoZabiegu>
+			<opisZabiegu></opisZabiegu>
+			<kosztZabiegu></kosztZabiegu>
+		</zabieg>
+		<zabieg id_kategorii="1">
+			<glownaCzescCiala>GŁOWA</glownaCzescCiala>
+			<wybranaCzescCiala>Twarz</wybranaCzescCiala>
+			<rodzajZabiegu>Peeling</rodzajZabiegu>
+			<dataPlanowanegoZabiegu></dataPlanowanegoZabiegu>
+			<opisZabiegu></opisZabiegu>
+			<kosztZabiegu></kosztZabiegu>
+		</zabieg>
+		
+		<zabieg id_kategorii="2">
+			<glownaCzescCiala>DŁONIE I STOPY</glownaCzescCiala>
+			<wybranaCzescCiala>Paznokcie</wybranaCzescCiala>
+			<rodzajZabiegu>Manicure</rodzajZabiegu>
+			<dataPlanowanegoZabiegu></dataPlanowanegoZabiegu>
+			<opisZabiegu></opisZabiegu>
+			<kosztZabiegu></kosztZabiegu>
+		</zabieg>
+		<zabieg id_kategorii="2">
+			<glownaCzescCiala>DŁONIE I STOPY</glownaCzescCiala>
+			<wybranaCzescCiala>Paznokcie</wybranaCzescCiala>
+			<rodzajZabiegu>Manicure hybrydowy</rodzajZabiegu>
+			<dataPlanowanegoZabiegu></dataPlanowanegoZabiegu>
+			<opisZabiegu></opisZabiegu>
+			<kosztZabiegu></kosztZabiegu>
+		</zabieg>
+		<zabieg id_kategorii="2">
+			<glownaCzescCiala>DŁONIE I STOPY</glownaCzescCiala>
+			<wybranaCzescCiala>Paznokcie</wybranaCzescCiala>
+			<rodzajZabiegu>Pedicure</rodzajZabiegu>
+			<dataPlanowanegoZabiegu></dataPlanowanegoZabiegu>
+			<opisZabiegu></opisZabiegu>
+			<kosztZabiegu></kosztZabiegu>
+		</zabieg>
+		<zabieg id_kategorii="2">
+			<glownaCzescCiala>DŁONIE I STOPY</glownaCzescCiala>
+			<wybranaCzescCiala>Paznokcie</wybranaCzescCiala>
+			<rodzajZabiegu>Pedicure hybrydowy</rodzajZabiegu>
+			<dataPlanowanegoZabiegu></dataPlanowanegoZabiegu>
+			<opisZabiegu></opisZabiegu>
+			<kosztZabiegu></kosztZabiegu>
+		</zabieg>
+		<zabieg id_kategorii="2">
+			<glownaCzescCiala>DŁONIE I STOPY</glownaCzescCiala>
+			<wybranaCzescCiala>Dłonie</wybranaCzescCiala>
+			<rodzajZabiegu>Peeling i nawilżanie</rodzajZabiegu>
+			<dataPlanowanegoZabiegu></dataPlanowanegoZabiegu>
+			<opisZabiegu></opisZabiegu>
+			<kosztZabiegu></kosztZabiegu>
+		</zabieg>
+		<zabieg id_kategorii="2">
+			<glownaCzescCiala>DŁONIE I STOPY</glownaCzescCiala>
+			<wybranaCzescCiala>Stopy</wybranaCzescCiala>
+			<rodzajZabiegu>Peeling i nawilżanie</rodzajZabiegu>
+			<dataPlanowanegoZabiegu></dataPlanowanegoZabiegu>
+			<opisZabiegu></opisZabiegu>
+			<kosztZabiegu></kosztZabiegu>
+		</zabieg>
+		<zabieg id_kategorii="2">
+			<glownaCzescCiala>DŁONIE I STOPY</glownaCzescCiala>
+			<wybranaCzescCiala>Dłonie</wybranaCzescCiala>
+			<rodzajZabiegu>Parafina</rodzajZabiegu>
+			<dataPlanowanegoZabiegu></dataPlanowanegoZabiegu>
+			<opisZabiegu></opisZabiegu>
+			<kosztZabiegu></kosztZabiegu>
+		</zabieg>
+		<zabieg id_kategorii="2">
+			<glownaCzescCiala>DŁONIE I STOPY</glownaCzescCiala>
+			<wybranaCzescCiala>Stopy</wybranaCzescCiala>
+			<rodzajZabiegu>Parafina</rodzajZabiegu>
+			<dataPlanowanegoZabiegu></dataPlanowanegoZabiegu>
+			<opisZabiegu></opisZabiegu>
+			<kosztZabiegu></kosztZabiegu>
+		</zabieg>
+
+		<zabieg id_kategorii="3">
+			<glownaCzescCiala>CIAŁO</glownaCzescCiala>
+			<wybranaCzescCiala>Całe ciało</wybranaCzescCiala>
+			<rodzajZabiegu>Masaż</rodzajZabiegu>
+			<dataPlanowanegoZabiegu></dataPlanowanegoZabiegu>
+			<opisZabiegu></opisZabiegu>
+			<kosztZabiegu></kosztZabiegu>
+		</zabieg>
+		<zabieg id_kategorii="3">
+			<glownaCzescCiala>CIAŁO</glownaCzescCiala>
+			<wybranaCzescCiala>Całe ciało</wybranaCzescCiala>
+			<rodzajZabiegu>Peeling</rodzajZabiegu>
+			<dataPlanowanegoZabiegu></dataPlanowanegoZabiegu>
+			<opisZabiegu></opisZabiegu>
+			<kosztZabiegu></kosztZabiegu>
+		</zabieg>
+		<zabieg id_kategorii="3">
+			<glownaCzescCiala>CIAŁO</glownaCzescCiala>
+			<wybranaCzescCiala>Całe ciało</wybranaCzescCiala>
+			<rodzajZabiegu>Depilacja woskiem</rodzajZabiegu>
+			<dataPlanowanegoZabiegu></dataPlanowanegoZabiegu>
+			<opisZabiegu></opisZabiegu>
+			<kosztZabiegu></kosztZabiegu>
+		</zabieg>
+		<zabieg id_kategorii="3">
+			<glownaCzescCiala>CIAŁO</glownaCzescCiala>
+			<wybranaCzescCiala>Całe ciało</wybranaCzescCiala>
+			<rodzajZabiegu>Depilacja laserowa</rodzajZabiegu>
+			<dataPlanowanegoZabiegu></dataPlanowanegoZabiegu>
+			<opisZabiegu></opisZabiegu>
+			<kosztZabiegu></kosztZabiegu>
+		</zabieg>
+		<zabieg id_kategorii="3">
+			<glownaCzescCiala>CIAŁO</glownaCzescCiala>
+			<wybranaCzescCiala>Nogi</wybranaCzescCiala>
+			<rodzajZabiegu>Depilacja woskiem</rodzajZabiegu>
+			<dataPlanowanegoZabiegu></dataPlanowanegoZabiegu>
+			<opisZabiegu></opisZabiegu>
+			<kosztZabiegu></kosztZabiegu>
+		</zabieg>
+		<zabieg id_kategorii="3">
+			<glownaCzescCiala>CIAŁO</glownaCzescCiala>
+			<wybranaCzescCiala>Nogi</wybranaCzescCiala>
+			<rodzajZabiegu>Depilacja laserowa</rodzajZabiegu>
+			<dataPlanowanegoZabiegu></dataPlanowanegoZabiegu>
+			<opisZabiegu></opisZabiegu>
+			<kosztZabiegu></kosztZabiegu>
+		</zabieg>
+	</zadbajO>
+	<autorzy>
+		<autor>
+			<imie>Katarzyna</imie>
+			<nazwisko>Mural</nazwisko>
+			<adres>Politechnika Koszalińska</adres>
+			<mail>jakis@mail.com</mail>
+		</autor>
+		<autor>
+			<imie>Jakub</imie>
+			<nazwisko>Pyda</nazwisko>
+			<adres>Politechnika Koszalińska</adres>
+			<mail>jakis@mail.com</mail>
+		</autor>
+	</autorzy>
+</planerUrodowy>
