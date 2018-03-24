@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="uslugi.xsl"?>
 <planerUrodowy>
 	<zadbajO>
-		<zabieg id_kategorii="1">
+		<zabieg id_zabieg="1" id_kategorii="1">
 			<glownaCzescCiala>GŁOWA</glownaCzescCiala>
 			<wybranaCzescCiala>Włosy</wybranaCzescCiala>
 			<rodzajZabiegu>Farbowanie</rodzajZabiegu>
@@ -10,7 +10,7 @@
 			<opisZabiegu></opisZabiegu>
 			<kosztZabiegu>120</kosztZabiegu>
 		</zabieg>
-		<zabieg id_kategorii="1">
+		<zabieg id_zabieg="2" id_kategorii="1">
 			<glownaCzescCiala>GŁOWA</glownaCzescCiala>
 			<wybranaCzescCiala>Włosy</wybranaCzescCiala>
 			<rodzajZabiegu>Maska</rodzajZabiegu>
@@ -18,7 +18,7 @@
 			<opisZabiegu></opisZabiegu>
 			<kosztZabiegu></kosztZabiegu>
 		</zabieg>
-		<zabieg id_kategorii="1">
+		<zabieg id_zabieg="3" id_kategorii="1">
 			<glownaCzescCiala>GŁOWA</glownaCzescCiala>
 			<wybranaCzescCiala>Włosy</wybranaCzescCiala>
 			<rodzajZabiegu>Strzyżenie</rodzajZabiegu>
@@ -26,7 +26,7 @@
 			<opisZabiegu></opisZabiegu>
 			<kosztZabiegu></kosztZabiegu>
 		</zabieg>
-		<zabieg id_kategorii="1">
+		<zabieg id_zabieg="4" id_kategorii="1">
 			<glownaCzescCiala>GŁOWA</glownaCzescCiala>
 			<wybranaCzescCiala>Twarz</wybranaCzescCiala>
 			<rodzajZabiegu>Peeling</rodzajZabiegu>
@@ -34,7 +34,7 @@
 			<opisZabiegu></opisZabiegu>
 			<kosztZabiegu></kosztZabiegu>
 		</zabieg>
-		<zabieg id_kategorii="1">
+		<zabieg id_zabieg="5" id_kategorii="1">
 			<glownaCzescCiala>GŁOWA</glownaCzescCiala>
 			<wybranaCzescCiala>Twarz</wybranaCzescCiala>
 			<rodzajZabiegu>Maska</rodzajZabiegu>
@@ -42,7 +42,7 @@
 			<opisZabiegu></opisZabiegu>
 			<kosztZabiegu></kosztZabiegu>
 		</zabieg>
-		<zabieg id_kategorii="1">
+		<zabieg id_zabieg="6" id_kategorii="1">
 			<glownaCzescCiala>GŁOWA</glownaCzescCiala>
 			<wybranaCzescCiala>Twarz</wybranaCzescCiala>
 			<rodzajZabiegu>Peeling</rodzajZabiegu>
@@ -51,7 +51,7 @@
 			<kosztZabiegu></kosztZabiegu>
 		</zabieg>
 		
-		<zabieg id_kategorii="2">
+		<zabieg id_zabieg="7" id_kategorii="2">
 			<glownaCzescCiala>DŁONIE I STOPY</glownaCzescCiala>
 			<wybranaCzescCiala>Paznokcie</wybranaCzescCiala>
 			<rodzajZabiegu>Manicure</rodzajZabiegu>
@@ -59,7 +59,7 @@
 			<opisZabiegu></opisZabiegu>
 			<kosztZabiegu></kosztZabiegu>
 		</zabieg>
-		<zabieg id_kategorii="2">
+		<zabieg id_zabieg="8" id_kategorii="2">
 			<glownaCzescCiala>DŁONIE I STOPY</glownaCzescCiala>
 			<wybranaCzescCiala>Paznokcie</wybranaCzescCiala>
 			<rodzajZabiegu>Manicure hybrydowy</rodzajZabiegu>
@@ -67,7 +67,7 @@
 			<opisZabiegu></opisZabiegu>
 			<kosztZabiegu></kosztZabiegu>
 		</zabieg>
-		<zabieg id_kategorii="2">
+		<zabieg id_zabieg="9" id_kategorii="2">
 			<glownaCzescCiala>DŁONIE I STOPY</glownaCzescCiala>
 			<wybranaCzescCiala>Paznokcie</wybranaCzescCiala>
 			<rodzajZabiegu>Pedicure</rodzajZabiegu>
@@ -75,7 +75,7 @@
 			<opisZabiegu></opisZabiegu>
 			<kosztZabiegu></kosztZabiegu>
 		</zabieg>
-		<zabieg id_kategorii="2">
+		<zabieg id_zabieg="10" id_kategorii="2">
 			<glownaCzescCiala>DŁONIE I STOPY</glownaCzescCiala>
 			<wybranaCzescCiala>Paznokcie</wybranaCzescCiala>
 			<rodzajZabiegu>Pedicure hybrydowy</rodzajZabiegu>
@@ -83,7 +83,7 @@
 			<opisZabiegu></opisZabiegu>
 			<kosztZabiegu></kosztZabiegu>
 		</zabieg>
-		<zabieg id_kategorii="2">
+		<zabieg id_zabieg="11" id_kategorii="2">
 			<glownaCzescCiala>DŁONIE I STOPY</glownaCzescCiala>
 			<wybranaCzescCiala>Dłonie</wybranaCzescCiala>
 			<rodzajZabiegu>Peeling i nawilżanie</rodzajZabiegu>
@@ -91,7 +91,7 @@
 			<opisZabiegu></opisZabiegu>
 			<kosztZabiegu></kosztZabiegu>
 		</zabieg>
-		<zabieg id_kategorii="2">
+		<zabieg id_zabieg="12" id_kategorii="2">
 			<glownaCzescCiala>DŁONIE I STOPY</glownaCzescCiala>
 			<wybranaCzescCiala>Stopy</wybranaCzescCiala>
 			<rodzajZabiegu>Peeling i nawilżanie</rodzajZabiegu>
@@ -99,7 +99,7 @@
 			<opisZabiegu></opisZabiegu>
 			<kosztZabiegu></kosztZabiegu>
 		</zabieg>
-		<zabieg id_kategorii="2">
+		<zabieg id_zabieg="13" id_kategorii="2">
 			<glownaCzescCiala>DŁONIE I STOPY</glownaCzescCiala>
 			<wybranaCzescCiala>Dłonie</wybranaCzescCiala>
 			<rodzajZabiegu>Parafina</rodzajZabiegu>
@@ -107,7 +107,7 @@
 			<opisZabiegu></opisZabiegu>
 			<kosztZabiegu></kosztZabiegu>
 		</zabieg>
-		<zabieg id_kategorii="2">
+		<zabieg id_zabieg="14" id_kategorii="2">
 			<glownaCzescCiala>DŁONIE I STOPY</glownaCzescCiala>
 			<wybranaCzescCiala>Stopy</wybranaCzescCiala>
 			<rodzajZabiegu>Parafina</rodzajZabiegu>
@@ -116,7 +116,7 @@
 			<kosztZabiegu></kosztZabiegu>
 		</zabieg>
 
-		<zabieg id_kategorii="3">
+		<zabieg id_zabieg="15" id_kategorii="3">
 			<glownaCzescCiala>CIAŁO</glownaCzescCiala>
 			<wybranaCzescCiala>Całe ciało</wybranaCzescCiala>
 			<rodzajZabiegu>Masaż</rodzajZabiegu>
@@ -124,7 +124,7 @@
 			<opisZabiegu></opisZabiegu>
 			<kosztZabiegu></kosztZabiegu>
 		</zabieg>
-		<zabieg id_kategorii="3">
+		<zabieg id_zabieg="16" id_kategorii="3">
 			<glownaCzescCiala>CIAŁO</glownaCzescCiala>
 			<wybranaCzescCiala>Całe ciało</wybranaCzescCiala>
 			<rodzajZabiegu>Peeling</rodzajZabiegu>
@@ -132,7 +132,7 @@
 			<opisZabiegu></opisZabiegu>
 			<kosztZabiegu></kosztZabiegu>
 		</zabieg>
-		<zabieg id_kategorii="3">
+		<zabieg id_zabieg="17" id_kategorii="3">
 			<glownaCzescCiala>CIAŁO</glownaCzescCiala>
 			<wybranaCzescCiala>Całe ciało</wybranaCzescCiala>
 			<rodzajZabiegu>Depilacja woskiem</rodzajZabiegu>
@@ -140,7 +140,7 @@
 			<opisZabiegu></opisZabiegu>
 			<kosztZabiegu></kosztZabiegu>
 		</zabieg>
-		<zabieg id_kategorii="3">
+		<zabieg id_zabieg="18" id_kategorii="3">
 			<glownaCzescCiala>CIAŁO</glownaCzescCiala>
 			<wybranaCzescCiala>Całe ciało</wybranaCzescCiala>
 			<rodzajZabiegu>Depilacja laserowa</rodzajZabiegu>
@@ -148,7 +148,7 @@
 			<opisZabiegu></opisZabiegu>
 			<kosztZabiegu></kosztZabiegu>
 		</zabieg>
-		<zabieg id_kategorii="3">
+		<zabieg id_zabieg="19" id_kategorii="3">
 			<glownaCzescCiala>CIAŁO</glownaCzescCiala>
 			<wybranaCzescCiala>Nogi</wybranaCzescCiala>
 			<rodzajZabiegu>Depilacja woskiem</rodzajZabiegu>
@@ -156,7 +156,7 @@
 			<opisZabiegu></opisZabiegu>
 			<kosztZabiegu></kosztZabiegu>
 		</zabieg>
-		<zabieg id_kategorii="3">
+		<zabieg id_zabieg="20" id_kategorii="3">
 			<glownaCzescCiala>CIAŁO</glownaCzescCiala>
 			<wybranaCzescCiala>Nogi</wybranaCzescCiala>
 			<rodzajZabiegu>Depilacja laserowa</rodzajZabiegu>
