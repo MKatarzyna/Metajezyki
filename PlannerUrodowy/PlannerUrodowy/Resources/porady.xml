@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="porady.xsl"?>
+<planerUrodowy>
+	<porady>
+		<porada id_porady="1" id_kategorii="1">
+			<wybranaCzescCiala>GŁOWA</wybranaCzescCiala>
+			<opisPorady>Nałóż maskę na twarz :)
+
+Maseczki to Twoi sprzymierzeńcy! Aplikuj co najmniej jedną w tygodniu. Jeśli dysponujesz większą ilością czasu, staraj się dojść do 2-3 tygodniowo. Masz ograniczony budżet? Przygotuj maseczkę ze składników, które są dostępne w Twojej kuchni. W sieci znajdziesz mnóstwo przepisów na maseczki, które możesz przygotować sama.</opisPorady>
+		</porada>
+		<porada id_porady="2" id_kategorii="1">
+			<wybranaCzescCiala>GŁOWA</wybranaCzescCiala>
+			<opisPorady>Aplikuj krem… do góry!
+
+Podczas nakładania kremu nawilżającego na twarz, pamiętaj aby wmasowywać go ruchami okrężnymi ku górze. Nigdy nie ściągaj skóry ku dołowi, bo w ten sposób Twoja skóra twarzy szybciej straci jędrność. Kiedy przypilnujesz się kilka razy, ten nawyk na stałe wejdzie Ci w krew!</opisPorady>
+		</porada>
+		<porada id_porady="3" id_kategorii="1">
+			<wybranaCzescCiala>GŁOWA</wybranaCzescCiala>
+			<opisPorady>Umyj włosy… na sucho
+
+Suchy szampon to Twój sprzymierzeniec. Jeżeli jeszcze nie zaczęłaś go używać… nie wiesz co tracisz! To nie tylko szybki sposób na odświeżenie włosów i skóry głowy, ale też niezwykle delikatna metoda „mycia”. Kilka suchych szamponów miałaś okazję przetestować również dzięki beGLOSSY!</opisPorady>
+		</porada>
+		<porada id_porady="4" id_kategorii="2">
+			<wybranaCzescCiala>DŁONIE I STOPY</wybranaCzescCiala>
+			<opisPorady>Wygładź pięty
+
+Masz problem z popękanymi piętami? Tuż przed pójściem spać wmasuj w stopy maść na kaszel Vicks Vapo Rub, a następnie nałóż skarpetki. Następnie dnia będziesz cieszyć się gładką skórą stóp i idealnymi piętami – i możesz już wskakiwać w sandały!</opisPorady>
+		</porada>
+		<porada id_porady="5" id_kategorii="2">
+			<wybranaCzescCiala>DŁONIE I STOPY</wybranaCzescCiala>
+			<opisPorady>Zadbaj o skórki
+
+Masz tendencję do zadzierających się skórek wokół paznokci? Codziennie używaj wazeliny kosmetycznej, bądź oliwki, aby je zmiękczyć. Tak nawilżone skórki wokół paznokci nie będą się zadzierać, a Twoje dłonie będą się lepiej prezentować!</opisPorady>
+		</porada>
+		<porada id_porady="6" id_kategorii="2">
+			<wybranaCzescCiala>DŁONIE I STOPY</wybranaCzescCiala>
+			<opisPorady>Na wakacjach chcemy odpoczywać, nie malować paznokcie! Przed wyjazdem zrób manicure hybrydowy lub kup trwały lakier nawierzchniowy. Z hybrydą masz spokój nawet do 3 tygodni, z dobrym top coatem - około tydzień.
+
+Więcej na: https://www.zeberka.pl/art/18-trikow-urodowych-ktore-przydadza-ci-sie-latem-30729
+</opisPorady>
+		</porada>
+		<porada id_porady="7" id_kategorii="3">
+			<wybranaCzescCiala>CIAŁO</wybranaCzescCiala>
+			<opisPorady>Długotrwały zapach
+
+Jeśli chcesz, aby perfumy dłużej utrzymywały się na Twoim ciele, spryskaj się nimi przed nałożeniem balsamu do ciała. Taki trick pozwoli Ci dłużej cieszyć się ulubionym zapachem!</opisPorady>
+		</porada>
+		<porada id_porady="8" id_kategorii="3">
+			<wybranaCzescCiala>CIAŁO</wybranaCzescCiala>
+			<opisPorady>Pij dużo wody!
+
+Zasada wszystkim znana, ale niezastąpiona: pij wodę! W dużych ilościach. Najlepiej minimum 1,5 litra dziennie! Jeśli będziesz odwodniona, odbije się to na stanie Twojej skóry, włosów, a także na samopoczuciu. Nie lubisz wody? Możesz urozmaicić ten napój dodając do niej sok z cytryny, grejpfruta, pomarańczy. Możesz dodać też listki mięty albo melisy. I pamiętaj – noś butelkę wody zawsze przy sobie!</opisPorady>
+		</porada>
+		<porada id_porady="9" id_kategorii="3">
+			<wybranaCzescCiala>CIAŁO</wybranaCzescCiala>
+			<opisPorady>To oficjalne, prysznic tylko wieczorem, nigdy rano!
+
+				Według nowojorskiego dermatologa, Samera Jabera, powinnyśmy wybierać wieczorną kąpiel (lub prysznic). A w szczególności wiosną i latem. Dlaczego? Powód może być trochę zaskakujący. Dotyczy w szczególności alergików. Okazuje się, że podczas mycia pozbywamy się warstwy ochronnej, która może chronić nas przed czynnikami alergennymi. No i oczywiście nie muszę Wam pewnie mówić, że po wieczornej goręcej kąpieli jesteśmy bardziej zrelaksowani i gotowi do snu. Po kąpieli śpi nam się zdecydowanie lepiej, to udowodnione.</opisPorady>
+		</porada>
+		<porada id_porady="10" id_kategorii="3">
+			<wybranaCzescCiala>CIAŁO</wybranaCzescCiala>
+			<opisPorady>Chcesz mieć piękną opaleniznę? 
+
+				Przed wyjazdem jedz dużo warzyw, które zawierają beta-karoten, np. marchewki, pomidory. Możesz również łykać "kapsułki słońca", które w składzie mają wspominany wyżej składnik. Nie przesadzaj jednak z ich ilością, chyba nie chcesz mieć pomarańczowej skóry? :)</opisPorady>
+		</porada>
+	</porady>
+</planerUrodowy>

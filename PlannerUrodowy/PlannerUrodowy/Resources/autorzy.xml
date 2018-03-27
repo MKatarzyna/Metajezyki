@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="autorzy.xsl"?>
+<autorzy>
+	<autor id_autora="1">
+		<imie>Katarzyna</imie>
+		<nazwisko>Mural</nazwisko>
+		<adres>Politechnika Koszalińska</adres>
+		<mail>jakis@mail.com</mail>
+		<telefon>123-123-123</telefon>
+	</autor>
+	<autor id_autora="2">
+		<imie>Jakub</imie>
+		<nazwisko>Pyda</nazwisko>
+		<adres>Politechnika Koszalińska</adres>
+		<mail>jakis@mail.com</mail>
+		<telefon>123-123-123</telefon>
+	</autor>
+</autorzy>
