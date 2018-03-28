@@ -61,18 +61,12 @@
             this.kosztZabiegu1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonGlowa = new System.Windows.Forms.Button();
             this.tabPagePorady = new System.Windows.Forms.TabPage();
-            this.tabPageAutorzy = new System.Windows.Forms.TabPage();
-            this.textBoxTelefon = new System.Windows.Forms.TextBox();
-            this.textBoxMail = new System.Windows.Forms.TextBox();
-            this.textBoxAdres = new System.Windows.Forms.TextBox();
-            this.textBoxNazwisko = new System.Windows.Forms.TextBox();
-            this.textBoxImie = new System.Windows.Forms.TextBox();
-            this.labelTelefon = new System.Windows.Forms.Label();
-            this.labelMail = new System.Windows.Forms.Label();
-            this.labelAdres = new System.Windows.Forms.Label();
-            this.labelNazwisko = new System.Windows.Forms.Label();
-            this.labelImie = new System.Windows.Forms.Label();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.buttonDodajPorady = new System.Windows.Forms.Button();
+            this.buttonEdytujPorady = new System.Windows.Forms.Button();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.ID_Porada = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Kategoria_Porada = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Opis_Porady = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2 = new System.Windows.Forms.Panel();
             this.buttonZatwierdzPorady = new System.Windows.Forms.Button();
             this.buttonAnulujPorady = new System.Windows.Forms.Button();
@@ -84,27 +78,22 @@
             this.buttonPoradyCialo = new System.Windows.Forms.Button();
             this.buttonPoradyDlonie = new System.Windows.Forms.Button();
             this.buttonPoradyGlowa = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.buttonDodajPorady = new System.Windows.Forms.Button();
-            this.buttonEdytujPorady = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Kategoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.OpisPorady = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPagePlaner.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabPagePorady.SuspendLayout();
-            this.tabPageAutorzy.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPagePlaner);
             this.tabControl1.Controls.Add(this.tabPagePorady);
-            this.tabControl1.Controls.Add(this.tabPageAutorzy);
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -421,111 +410,54 @@
             this.tabPagePorady.Text = "Porady";
             this.tabPagePorady.UseVisualStyleBackColor = true;
             // 
-            // tabPageAutorzy
+            // buttonDodajPorady
             // 
-            this.tabPageAutorzy.Controls.Add(this.textBoxTelefon);
-            this.tabPageAutorzy.Controls.Add(this.textBoxMail);
-            this.tabPageAutorzy.Controls.Add(this.textBoxAdres);
-            this.tabPageAutorzy.Controls.Add(this.textBoxNazwisko);
-            this.tabPageAutorzy.Controls.Add(this.textBoxImie);
-            this.tabPageAutorzy.Controls.Add(this.labelTelefon);
-            this.tabPageAutorzy.Controls.Add(this.labelMail);
-            this.tabPageAutorzy.Controls.Add(this.labelAdres);
-            this.tabPageAutorzy.Controls.Add(this.labelNazwisko);
-            this.tabPageAutorzy.Controls.Add(this.labelImie);
-            this.tabPageAutorzy.Location = new System.Drawing.Point(4, 22);
-            this.tabPageAutorzy.Name = "tabPageAutorzy";
-            this.tabPageAutorzy.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageAutorzy.Size = new System.Drawing.Size(1092, 531);
-            this.tabPageAutorzy.TabIndex = 2;
-            this.tabPageAutorzy.Text = "Autorzy";
-            this.tabPageAutorzy.UseVisualStyleBackColor = true;
+            this.buttonDodajPorady.Location = new System.Drawing.Point(839, 35);
+            this.buttonDodajPorady.Name = "buttonDodajPorady";
+            this.buttonDodajPorady.Size = new System.Drawing.Size(75, 23);
+            this.buttonDodajPorady.TabIndex = 28;
+            this.buttonDodajPorady.Text = "Dodaj";
+            this.buttonDodajPorady.UseVisualStyleBackColor = true;
+            this.buttonDodajPorady.Click += new System.EventHandler(this.buttonDodajPorady_Click);
             // 
-            // textBoxTelefon
+            // buttonEdytujPorady
             // 
-            this.textBoxTelefon.Location = new System.Drawing.Point(223, 208);
-            this.textBoxTelefon.Name = "textBoxTelefon";
-            this.textBoxTelefon.Size = new System.Drawing.Size(100, 20);
-            this.textBoxTelefon.TabIndex = 19;
+            this.buttonEdytujPorady.Location = new System.Drawing.Point(758, 35);
+            this.buttonEdytujPorady.Name = "buttonEdytujPorady";
+            this.buttonEdytujPorady.Size = new System.Drawing.Size(75, 23);
+            this.buttonEdytujPorady.TabIndex = 27;
+            this.buttonEdytujPorady.Text = "Edytuj";
+            this.buttonEdytujPorady.UseVisualStyleBackColor = true;
+            this.buttonEdytujPorady.Click += new System.EventHandler(this.buttonEdytujPorady_Click);
             // 
-            // textBoxMail
+            // dataGridView2
             // 
-            this.textBoxMail.Location = new System.Drawing.Point(223, 181);
-            this.textBoxMail.Name = "textBoxMail";
-            this.textBoxMail.Size = new System.Drawing.Size(100, 20);
-            this.textBoxMail.TabIndex = 18;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID_Porada,
+            this.Kategoria_Porada,
+            this.Opis_Porady});
+            this.dataGridView2.Location = new System.Drawing.Point(6, 35);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(665, 492);
+            this.dataGridView2.TabIndex = 26;
             // 
-            // textBoxAdres
+            // ID_Porada
             // 
-            this.textBoxAdres.Location = new System.Drawing.Point(223, 154);
-            this.textBoxAdres.Name = "textBoxAdres";
-            this.textBoxAdres.Size = new System.Drawing.Size(100, 20);
-            this.textBoxAdres.TabIndex = 17;
+            this.ID_Porada.HeaderText = "ID";
+            this.ID_Porada.Name = "ID_Porada";
+            this.ID_Porada.Width = 20;
             // 
-            // textBoxNazwisko
+            // Kategoria_Porada
             // 
-            this.textBoxNazwisko.Location = new System.Drawing.Point(223, 127);
-            this.textBoxNazwisko.Name = "textBoxNazwisko";
-            this.textBoxNazwisko.Size = new System.Drawing.Size(100, 20);
-            this.textBoxNazwisko.TabIndex = 16;
+            this.Kategoria_Porada.HeaderText = "Kategoria";
+            this.Kategoria_Porada.Name = "Kategoria_Porada";
             // 
-            // textBoxImie
+            // Opis_Porady
             // 
-            this.textBoxImie.Location = new System.Drawing.Point(223, 100);
-            this.textBoxImie.Name = "textBoxImie";
-            this.textBoxImie.Size = new System.Drawing.Size(100, 20);
-            this.textBoxImie.TabIndex = 15;
-            // 
-            // labelTelefon
-            // 
-            this.labelTelefon.AutoSize = true;
-            this.labelTelefon.Location = new System.Drawing.Point(171, 211);
-            this.labelTelefon.Name = "labelTelefon";
-            this.labelTelefon.Size = new System.Drawing.Size(46, 13);
-            this.labelTelefon.TabIndex = 14;
-            this.labelTelefon.Text = "Telefon:";
-            // 
-            // labelMail
-            // 
-            this.labelMail.AutoSize = true;
-            this.labelMail.Location = new System.Drawing.Point(188, 184);
-            this.labelMail.Name = "labelMail";
-            this.labelMail.Size = new System.Drawing.Size(29, 13);
-            this.labelMail.TabIndex = 13;
-            this.labelMail.Text = "Mail:";
-            // 
-            // labelAdres
-            // 
-            this.labelAdres.AutoSize = true;
-            this.labelAdres.Location = new System.Drawing.Point(180, 157);
-            this.labelAdres.Name = "labelAdres";
-            this.labelAdres.Size = new System.Drawing.Size(37, 13);
-            this.labelAdres.TabIndex = 12;
-            this.labelAdres.Text = "Adres:";
-            // 
-            // labelNazwisko
-            // 
-            this.labelNazwisko.AutoSize = true;
-            this.labelNazwisko.Location = new System.Drawing.Point(161, 130);
-            this.labelNazwisko.Name = "labelNazwisko";
-            this.labelNazwisko.Size = new System.Drawing.Size(56, 13);
-            this.labelNazwisko.TabIndex = 11;
-            this.labelNazwisko.Text = "Nazwisko:";
-            // 
-            // labelImie
-            // 
-            this.labelImie.AutoSize = true;
-            this.labelImie.Location = new System.Drawing.Point(188, 103);
-            this.labelImie.Name = "labelImie";
-            this.labelImie.Size = new System.Drawing.Size(29, 13);
-            this.labelImie.TabIndex = 10;
-            this.labelImie.Text = "Imię:";
-            // 
-            // imageList1
-            // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.Opis_Porady.HeaderText = "Opis porady";
+            this.Opis_Porady.Name = "Opis_Porady";
+            this.Opis_Porady.Width = 500;
             // 
             // panel2
             // 
@@ -548,6 +480,7 @@
             this.buttonZatwierdzPorady.TabIndex = 21;
             this.buttonZatwierdzPorady.Text = "Zatwierdź";
             this.buttonZatwierdzPorady.UseVisualStyleBackColor = true;
+            this.buttonZatwierdzPorady.Click += new System.EventHandler(this.buttonZatwierdzPorady_Click);
             // 
             // buttonAnulujPorady
             // 
@@ -557,6 +490,7 @@
             this.buttonAnulujPorady.TabIndex = 20;
             this.buttonAnulujPorady.Text = "Anuluj";
             this.buttonAnulujPorady.UseVisualStyleBackColor = true;
+            this.buttonAnulujPorady.Click += new System.EventHandler(this.buttonAnulujPorady_Click);
             // 
             // labelPoradaKategoria
             // 
@@ -587,6 +521,7 @@
             this.comboBoxPoradyKategoria.Name = "comboBoxPoradyKategoria";
             this.comboBoxPoradyKategoria.Size = new System.Drawing.Size(121, 21);
             this.comboBoxPoradyKategoria.TabIndex = 7;
+            this.comboBoxPoradyKategoria.SelectedIndexChanged += new System.EventHandler(this.comboBoxPoradyKategoria_SelectedIndexChanged);
             // 
             // textBoxOpisPorady
             // 
@@ -604,6 +539,7 @@
             this.buttonUsunPorady.TabIndex = 24;
             this.buttonUsunPorady.Text = "Usuń";
             this.buttonUsunPorady.UseVisualStyleBackColor = true;
+            this.buttonUsunPorady.Click += new System.EventHandler(this.buttonUsunPorady_Click);
             // 
             // buttonPoradyCialo
             // 
@@ -613,6 +549,7 @@
             this.buttonPoradyCialo.TabIndex = 23;
             this.buttonPoradyCialo.Text = "Ciało";
             this.buttonPoradyCialo.UseVisualStyleBackColor = true;
+            this.buttonPoradyCialo.Click += new System.EventHandler(this.buttonPoradyCialo_Click);
             // 
             // buttonPoradyDlonie
             // 
@@ -622,6 +559,7 @@
             this.buttonPoradyDlonie.TabIndex = 22;
             this.buttonPoradyDlonie.Text = "Dłonie i stopy";
             this.buttonPoradyDlonie.UseVisualStyleBackColor = true;
+            this.buttonPoradyDlonie.Click += new System.EventHandler(this.buttonPoradyDlonie_Click);
             // 
             // buttonPoradyGlowa
             // 
@@ -631,36 +569,13 @@
             this.buttonPoradyGlowa.TabIndex = 21;
             this.buttonPoradyGlowa.Text = "Głowa";
             this.buttonPoradyGlowa.UseVisualStyleBackColor = true;
+            this.buttonPoradyGlowa.Click += new System.EventHandler(this.buttonPoradyGlowa_Click);
             // 
-            // dataGridView2
+            // imageList1
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
-            this.Kategoria,
-            this.OpisPorady});
-            this.dataGridView2.Location = new System.Drawing.Point(6, 35);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(665, 492);
-            this.dataGridView2.TabIndex = 26;
-            // 
-            // buttonDodajPorady
-            // 
-            this.buttonDodajPorady.Location = new System.Drawing.Point(839, 35);
-            this.buttonDodajPorady.Name = "buttonDodajPorady";
-            this.buttonDodajPorady.Size = new System.Drawing.Size(75, 23);
-            this.buttonDodajPorady.TabIndex = 28;
-            this.buttonDodajPorady.Text = "Dodaj";
-            this.buttonDodajPorady.UseVisualStyleBackColor = true;
-            // 
-            // buttonEdytujPorady
-            // 
-            this.buttonEdytujPorady.Location = new System.Drawing.Point(758, 35);
-            this.buttonEdytujPorady.Name = "buttonEdytujPorady";
-            this.buttonEdytujPorady.Size = new System.Drawing.Size(75, 23);
-            this.buttonEdytujPorady.TabIndex = 27;
-            this.buttonEdytujPorady.Text = "Edytuj";
-            this.buttonEdytujPorady.UseVisualStyleBackColor = true;
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // ID
             // 
@@ -672,13 +587,6 @@
             // 
             this.Kategoria.HeaderText = "Kategoria";
             this.Kategoria.Name = "Kategoria";
-            // 
-            // OpisPorady
-            // 
-            this.OpisPorady.FillWeight = 200F;
-            this.OpisPorady.HeaderText = "Opis porady";
-            this.OpisPorady.Name = "OpisPorady";
-            this.OpisPorady.Width = 500;
             // 
             // Form1
             // 
@@ -694,11 +602,9 @@
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabPagePorady.ResumeLayout(false);
-            this.tabPageAutorzy.ResumeLayout(false);
-            this.tabPageAutorzy.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -738,17 +644,6 @@
         private System.Windows.Forms.Button buttonZatwierdz;
         private System.Windows.Forms.Button buttonAnuluj;
         private System.Windows.Forms.TextBox textBoxRodzajZabiegu;
-        private System.Windows.Forms.TabPage tabPageAutorzy;
-        private System.Windows.Forms.TextBox textBoxTelefon;
-        private System.Windows.Forms.TextBox textBoxMail;
-        private System.Windows.Forms.TextBox textBoxAdres;
-        private System.Windows.Forms.TextBox textBoxNazwisko;
-        private System.Windows.Forms.TextBox textBoxImie;
-        private System.Windows.Forms.Label labelTelefon;
-        private System.Windows.Forms.Label labelMail;
-        private System.Windows.Forms.Label labelAdres;
-        private System.Windows.Forms.Label labelNazwisko;
-        private System.Windows.Forms.Label labelImie;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button buttonZatwierdzPorady;
@@ -765,7 +660,9 @@
         private System.Windows.Forms.Button buttonEdytujPorady;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Kategoria;
-        private System.Windows.Forms.DataGridViewTextBoxColumn OpisPorady;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID_Porada;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Kategoria_Porada;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Opis_Porady;
     }
 }
 

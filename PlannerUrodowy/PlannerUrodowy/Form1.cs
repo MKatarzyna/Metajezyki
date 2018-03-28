@@ -14,6 +14,7 @@ namespace PlannerUrodowy
     public partial class Form1 : Form
     {
         XmlDocument document;
+        XmlDocument dokumentPorady;
 
         String idZabieg;
         String glownaCzescCiala;
@@ -31,24 +32,44 @@ namespace PlannerUrodowy
         String panelKoszt;
         String panelOpis;
 
+        String idPorady;
+        String wybranaCzescCialaPorady;
+        String opisPorady;
+
+        String panelIdPorady;
+        String panelKategoriaPorady;
+        String panelOpisPorady;
+
         int numerAktualnegoDzialu;
         int rodzajWybraneKategorii;
+
+        int numerAktualnegoDzialuPorady;
+        int rodzajWybraneKategoriiPorady;
 
         public Form1()
         {
             InitializeComponent();
             panel1.Visible = false;
+            panel2.Visible = false;
             
             comboBoxKategoria.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBoxCzescCiala.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxPoradyKategoria.DropDownStyle = ComboBoxStyle.DropDownList;
             WyczyscDane();
             WczytajDokumentXML();
+            WczytajDokumentXMLPorady();
         }
 
         public void WczytajDokumentXML()
         {
             document = new XmlDocument();
             document.Load("../../Resources/uslugi.xml");
+        }
+
+        public void WczytajDokumentXMLPorady()
+        {
+            dokumentPorady = new XmlDocument();
+            dokumentPorady.Load("../../Resources/porady.xml");
         }
 
         public void WyczyscDane()
@@ -95,6 +116,28 @@ namespace PlannerUrodowy
                 kosztZabiegu = node.SelectSingleNode("kosztZabiegu").InnerText;
 
                 dataGridView1.Rows.Add(idZabieg, glownaCzescCiala, wybranaCzescCiala, rodzajZabiegu, dataPlanowanegoZabiegu, opisZabiegu, kosztZabiegu);
+            }
+        }
+
+        private void WyswietlDaneWTabeliPorady(int idKategorii)
+        {
+            int iloscPorad;
+            XmlNodeList nodelistUslugi = dokumentPorady.DocumentElement.SelectNodes("/planerUrodowy/porady/porada[@id_kategorii='" + idKategorii + "']");
+            iloscPorad = nodelistUslugi.Count;
+            Console.WriteLine("ilosc porad: " + iloscPorad);
+            dataGridView2.Rows.Clear();
+
+            for (int i = 0; i < iloscPorad; i++)
+            {
+                XmlNode node = nodelistUslugi.Item(i);
+
+                XmlAttribute idPoradyAtrybut = (XmlAttribute)node.Attributes.GetNamedItem("id_porady");
+                idPorady = idPoradyAtrybut.Value;
+
+                wybranaCzescCialaPorady = node.SelectSingleNode("wybranaCzescCiala").InnerText;
+                opisPorady = node.SelectSingleNode("opisPorady").InnerText;
+
+                dataGridView2.Rows.Add(idPorady, wybranaCzescCialaPorady, opisPorady);
             }
         }
 
@@ -325,6 +368,169 @@ namespace PlannerUrodowy
                 comboBoxCzescCiala.Items.Add("Całe ciało");
                 comboBoxCzescCiala.Items.Add("Nogi");
                 rodzajWybraneKategorii = 3;
+            }
+        }
+
+        private void buttonPoradyGlowa_Click(object sender, EventArgs e)
+        {
+            numerAktualnegoDzialuPorady = 1;
+            WyswietlDaneWTabeliPorady(numerAktualnegoDzialuPorady);
+        }
+
+        private void buttonPoradyDlonie_Click(object sender, EventArgs e)
+        {
+            numerAktualnegoDzialuPorady = 2;
+            WyswietlDaneWTabeliPorady(numerAktualnegoDzialuPorady);
+        }
+
+        private void buttonPoradyCialo_Click(object sender, EventArgs e)
+        {
+            numerAktualnegoDzialuPorady = 3;
+            WyswietlDaneWTabeliPorady(numerAktualnegoDzialuPorady);
+        }
+
+        private void buttonUsunPorady_Click(object sender, EventArgs e)
+        {
+            String komorkaIdPorady;
+            String xPathElement;
+
+            if (dataGridView2.SelectedRows.Count > 0)
+            {
+                // podbrac zaznaczony id porady
+                komorkaIdPorady = dataGridView2.Rows[dataGridView2.SelectedRows[0].Index].Cells[0].Value.ToString();
+
+                // utworzyc xpath
+                xPathElement = "/planerUrodowy/porady/porada[@id_porady='" + komorkaIdPorady + "']";
+
+                var potwierdzenie = MessageBox.Show("Czy chcesz na pewno usunąć dany wiersz?", "Potwierdzenie", MessageBoxButtons.YesNo);
+                if (potwierdzenie == DialogResult.Yes)
+                {
+                    // usunac cały tag dla konkretnego id porady
+                    WczytajDokumentXMLPorady();
+                    XmlNode node = dokumentPorady.SelectSingleNode(xPathElement);
+                    node.RemoveAll();
+
+                    XmlNode parentNode = node.ParentNode;
+                    parentNode.RemoveChild(node);
+                    dokumentPorady.Save("../../Resources/porady.xml");
+                    WyswietlDaneWTabeliPorady(numerAktualnegoDzialuPorady);
+                    panel2.Visible = false;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Zaznacz poprawnie cały wiersz", "Informacja", MessageBoxButtons.OK);
+            }
+        }
+
+        private void buttonEdytujPorady_Click(object sender, EventArgs e)
+        {
+            if (dataGridView2.SelectedRows.Count > 0)
+            {
+                panel2.Visible = true;
+                numerAktualnegoDzialuPorady = 1;
+
+                comboBoxPoradyKategoria.Enabled = false;
+                
+              //  WypelnijListe();
+
+                // do zmiennych lokalnych pobrac wartości z tych pól do nowych stringów (podane wyzej)
+                panelIdPorady = dataGridView2.Rows[dataGridView2.SelectedRows[0].Index].Cells[0].Value.ToString();
+                panelKategoriaPorady = dataGridView2.Rows[dataGridView2.SelectedRows[0].Index].Cells[1].Value.ToString();
+                panelOpisPorady = dataGridView2.Rows[dataGridView2.SelectedRows[0].Index].Cells[2].Value.ToString();
+
+                comboBoxPoradyKategoria.SelectedIndex = comboBoxPoradyKategoria.FindStringExact(panelKategoriaPorady);
+                textBoxOpisPorady.Text = panelOpisPorady;
+            }
+            else
+            {
+                MessageBox.Show("Zaznacz poprawnie cały wiersz, aby edytować.", "Informacja", MessageBoxButtons.OK);
+            }
+        }
+
+        private void buttonAnulujPorady_Click(object sender, EventArgs e)
+        {
+            panel2.Visible = false;
+        }
+
+        private void buttonZatwierdzPorady_Click(object sender, EventArgs e)
+        {
+            String xPathElement;
+
+            if (numerAktualnegoDzialuPorady == 1)
+            {
+                //EDYCJA
+
+                // utwożyć xpath do zabiegu który bedzie edytowany
+                xPathElement = "/planerUrodowy/porady/porada[@id_porady='" + panelIdPorady + "']";
+
+                // edytowac xml  i zapisac go
+                WczytajDokumentXMLPorady();
+                XmlNode nodes = dokumentPorady.SelectSingleNode(xPathElement);
+
+                nodes.SelectSingleNode("opisPorady").InnerText = textBoxOpisPorady.Text;
+                dokumentPorady.Save("../../Resources/porady.xml");
+                WyswietlDaneWTabeliPorady(numerAktualnegoDzialuPorady);
+                panel2.Visible = false;
+            }
+            else if (numerAktualnegoDzialuPorady == 2)
+            {
+                // DODAWANIE
+
+                WczytajDokumentXMLPorady();
+                var maxId = dokumentPorady.SelectNodes("/planerUrodowy/porady/porada")
+                                   .Cast<XmlElement>()
+                                   .Max(c => Int32.Parse(c.Attributes["id_porady"].Value));
+                Console.WriteLine("JAKI ID: " + maxId);
+
+                XmlElement el = (XmlElement)dokumentPorady.SelectSingleNode("/planerUrodowy/porady");
+                XmlElement elem = dokumentPorady.CreateElement("porada");
+                elem.SetAttribute("id_porady", (maxId + 1).ToString());
+                elem.SetAttribute("id_kategorii", rodzajWybraneKategoriiPorady.ToString());
+                el.AppendChild(elem);
+
+                XmlElement subElem1 = dokumentPorady.CreateElement("wybranaCzescCiala");
+                subElem1.InnerText = comboBoxPoradyKategoria.Text;
+                elem.AppendChild(subElem1);
+
+                XmlElement subElem2 = dokumentPorady.CreateElement("opisPorady");
+                subElem2.InnerText = textBoxOpisPorady.Text;
+                elem.AppendChild(subElem2);
+
+                dokumentPorady.Save("../../Resources/porady.xml");
+                numerAktualnegoDzialuPorady = rodzajWybraneKategoriiPorady;
+                WyswietlDaneWTabeliPorady(numerAktualnegoDzialuPorady);
+                panel2.Visible = false;
+            }
+        }
+
+        private void buttonDodajPorady_Click(object sender, EventArgs e)
+        {
+            panel2.Visible = true;
+            numerAktualnegoDzialuPorady = 2;
+
+          //  textBoxOpisPorady.Enabled = true;
+            comboBoxPoradyKategoria.Enabled = true;
+          
+            textBoxOpisPorady.Text = "";
+        }
+
+        private void comboBoxPoradyKategoria_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBoxPoradyKategoria.SelectedIndex == 0)
+            {
+                //GŁOWA
+                rodzajWybraneKategoriiPorady = 1;
+            }
+            else if (comboBoxPoradyKategoria.SelectedIndex == 1)
+            {
+                //DŁONIE I STOPY
+                rodzajWybraneKategoriiPorady = 2;
+            }
+            else if (comboBoxPoradyKategoria.SelectedIndex == 2)
+            {
+                // CIAŁO
+                rodzajWybraneKategoriiPorady = 3;
             }
         }
     }
